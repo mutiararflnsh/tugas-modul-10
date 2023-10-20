@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "fcea912a-e3af-4a12-a245-db3c4b84c8a6",
+		"name": "Tugas Individu Modul 10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18877515"
+	},
+	"item": [
+		{
+			"name": "Get All Devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sensor Suhu 2\",\r\n    \"location\" : \"Sidoarjo\",\r\n    \"type\" : \"11\",\r\n    \"sensor spesification\" : \"good\",\r\n    \"gps_location_longitude\" : \"70\",\r\n    \"gps_location_latitude\" : \"100\",\r\n    \"device_notification\" : \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/device",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Device",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sensor Suhu Edited\",\r\n    \"location\" : \"Sidoarjo\",\r\n    \"type\" : \"11\",\r\n    \"sensor spesification\" : \"good\",\r\n    \"gps_location_longitude\" : \"70\",\r\n    \"gps_location_latitude\" : \"100\",\r\n    \"device_notification\" : \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/device/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"device",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/device/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"device",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/device/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"device",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
